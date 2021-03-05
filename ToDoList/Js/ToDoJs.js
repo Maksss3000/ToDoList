@@ -90,18 +90,6 @@ function ClickMeBtn(){
 
   clr=colorBtn.value;
   
-/*
-  if(body.style.backgroundColor=="yellow")
-     console.log(body.style.backgroundColor="blue");
-
-  else if(body.style.backgroundColor=="")
-    console.log(body.style.backgroundColor="yellow");
-  
-    
-  else if(body.style.backgroundColor=="blue")
-    console.log(body.style.backgroundColor="yellow");
-    */
-
    if(bodyClr==clr){
     body.style.backgroundColor="#0d87f2";
     bodyClr='#0d87f2';
@@ -202,12 +190,7 @@ function DeleteAllTasksFunc(){
 
 list.addEventListener("mouseover",function(e){
   e.target.style.color="red";
-  /*
-  let text=e.target.querySelector("input");
-  let button=e.target.querySelector("button");
-  button.style.backgroundColor="red";
-  text.style.backgroundColor="red";
-  */
+  
 });
 
 list.addEventListener("mouseout",function(e){
