@@ -9,7 +9,7 @@ AddTaskBtn.addEventListener("click", AddTaskFunc);
 let taskField = document.querySelector(".main_input"); 
 taskField.addEventListener("click", ClickOnTaskField);
 
-//Getting Delete List Button-Id for deleting all Task`s
+//Getting Delete List Button for deleting all Task`s
 //and using function when clicking on this button.
 let deleteAllTasksBtn=document.querySelector(".deleteList");
 deleteAllTasksBtn.addEventListener("click",DeleteAllTasksFunc); 
@@ -44,33 +44,22 @@ function AddTaskFunc() {
   textField.value = " ";
   //Creating li,text,button elements.
   liElement = document.createElement("li"); 
-  // liElement.classList.add("li");
-  // inputTxtElement= document.createElement("input"); 
+  
   delbut = document.createElement("button");
   delbut.classList.add("createdBtn");
   //Specific Task in Text Field.
-  // inputTxtElement.value = textValue;
-  // liElement.value=textValue;
   liElement.textContent=textValue;
-  // liElement.appendChild(document.createTextNode(textValue));
-  // liElement.appendChild(textValue);
-  // console.log(textValue);
-  //Change color.
-  // inputTxtElement.style.color=colorBtn.value;
-
-  // inputTxtElement.readOnly="true";
+  
   delbut.innerHTML = "Del";
 
-  //Adding to my Task(li) Text Field.
-  // liElement.appendChild(inputTxtElement); 
-  //Adding to  my Task(li) Delete Button.
+  //Adding to  Task(li) Delete Button.
   liElement.appendChild(delbut); 
 
   //Id assignment to elements.
   // inputTxtElement.id = liElement.id = delbut.id = i;
   liElement.id = delbut.id = i;
   i++;
-  //Adding li(task) to my List(ul).
+  //Adding li(task) to  List(ul).
   list.appendChild(liElement);
  
    }
@@ -81,14 +70,13 @@ let clickMeBtn;
 clickMeBtn=document.getElementById("MyBtn");
 clickMeBtn.addEventListener("click",ClickMeBtn);
 
-
   let body;
   let clr;
   let bodyClr="";
+
 function ClickMeBtn(){
   
   
-
   body=document.querySelector("body");
 
   if(bodyClr=="")
@@ -112,10 +100,8 @@ else if(bodyClr=="#0d87f2"){
   body.style.backgroundColor=clr;
   bodyClr=clr;
   
-}
+  }
   
-
-
 }
 
 
@@ -135,10 +121,8 @@ function TextForSearchFunction(){
      taskTextField=listLength[i];
      task=taskTextField;
     taskTextField=task.textContent;
-    //Getting input field element.
-    // taskTextField=task.querySelector("textNode");
-    // console.log(taskTextField);
-    //If in Task-List is word from searching field.
+    
+    //If in Task-List exist`s word from searching field.
     if(taskTextField.includes(searchTextField.value)){
       task.style.display="block";
     }
@@ -169,7 +153,7 @@ function ColorChoose(){
    
      liElement=listLength[i];
      taskTextField=liElement.querySelector("input");
-    //  taskTextField.style.color=colour;
+    
   }
  }
 
@@ -217,20 +201,5 @@ list.addEventListener("click", function (e) {
   if(list.children.length==0){
     listIsEmpty.style.visibility="visible";
   }
-
-  //By clicking on text field,we can change style of text Decoration 
-  //Line-through task complete,else not complete.
-  // if (e.target && e.target.matches("input")) {
-  //   let textField;
-  //   textField=textFieldAndButton.querySelector("input");
-  
-  //   if ( textField.style.textDecoration == "line-through") {
-  //     textField.style.textDecoration = "none";
-  //   } 
-  //   else{
-  //     textField.style.textDecoration = "line-through";
-  //   }
-
-  // }
 
 });
