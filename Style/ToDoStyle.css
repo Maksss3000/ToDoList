@@ -1,0 +1,212 @@
+
+*{
+  box-sizing:border-box;
+}
+
+body {
+  
+  background-color: #0d87f2;
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+
+
+  font-style: italic;
+  /* font-family: "Roboto - Black"; */
+  font-weight: 300;
+  font-size: 20px;
+}
+h1 ,h2{
+  color: red;
+  font-family: "Roboto - Black";
+  font-size: 41px;
+  font-weight: 400;
+  font-size: 30px;
+  text-align: center;
+}
+h2{
+  color:black;
+}
+.mainClass{
+  min-height: 200px;
+  /* border-style:dotted; */
+}
+.mainContainer{
+  margin-top: 20px;
+  min-width: 150px;
+  min-height: 150px; 
+  /* border-style: dashed; */
+ 
+}
+
+.mainContainer .addTask_Search{
+  display: flex;
+  justify-content: space-around;
+}
+
+/* .mainContainer .deleteList{
+  display: block;
+  margin-left: 250px;
+} */
+
+/* .search_dele .deleteList{
+  display: block;
+  margin : 0 auto;
+} */
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items:center;
+  /* padding: 10px 200px ; */
+  /* border-style:dotted; */
+  /* position: relative; */
+}
+
+li{
+  min-width: 150px;
+  /* min-height: 150px;  */
+}
+li input{
+  min-width: 150px;
+}
+
+
+ .mainContainer .mainContainer_input{
+    /* border-style: dashed; */
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5em;
+    /* //background: #fff; */
+    min-height:15px;
+    color: #2f4f4f;
+ }
+
+ .mainContainer .addTask_Search .textField_addBtn .main_input{
+    /* height: 30px;  */
+    display: block;
+    margin: 0 auto;
+ }
+
+ .mainContainer .addTask_Search{
+   margin: 0 auto;
+ }
+ .mainContainer .main_addTaskBtn,.search_dele .deleteList, .createdBtn,.clickMe_btn{
+   display: block;
+   margin:0 auto;
+   margin-top: 15px;
+   box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.18);
+   border: 4px solid rgba(0, 0, 0, 0.23);
+   background-image: linear-gradient(to top, #2798b9 0%, #3ab6da 100%);
+
+
+   text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.22);
+    color: #ffffff;
+    font-family: "Roboto Condensed";
+    font-size: 21px;
+    font-weight: 400;
+    /* line-height: 24px; */
+    text-align: center;
+    text-transform: uppercase;
+
+    cursor: pointer;
+    outline: none;
+ }
+
+ .createdBtn,.clickMe_btn{
+  display: inline;
+  margin-left: 10px;
+  min-width: 45px;
+  min-height: 20px;
+  border-radius:30px;
+  font-style: italic;
+  background-image: linear-gradient(to top, #DAA520 0%,#FFF8DC	 100%);
+  /* font-size: 20px;
+  font-weight: 200; */
+ }
+
+ 
+ .search_dele .deleteList{
+  color: red
+}
+
+.mainContainer .clickMe{
+  /* margin: 0 auto; */
+  /* border-style: dashed; */
+  display: flex;
+   justify-items: center; 
+  justify-content: center;
+}
+
+ .clickMe_btn{
+  /* display: inline; */
+  background-image: linear-gradient(to top, #808080 0%,#FFF8DC	 100%);
+  
+} 
+
+#color{
+  margin-left: 25px;
+  /* border-radius:50%; */
+  background-color:blue;
+}
+
+footer p{
+  text-align: center;
+}
+/*
+input {
+  border: 5px solid #000;
+  border-radius: 30%;
+}
+*/
+/*
+input[type="text"] {
+  width: 310px;
+  height: 30px;
+  outline: 0;
+  border: none;
+  font-size: 1.5em;
+  background: #fff;
+  color: #2f4f4f;
+}
+*/
+
+/*
+li {
+  width: 310px;
+  height: 30px;
+  outline: 0;
+  border: none;
+  border: none;
+  font-size: 1.5em;
+  background: #fff;
+  color: #2f4f4f;
+}
+*/
+
+/*
+button {
+  border: 5px solid red;
+  border-radius: 50%;
+}
+*/
+/*
+button,
+input[type="button"] {
+  font-size: 1.2em;
+  color: #53bdff;
+  background-color: #fff;
+  outline: 0;
+  border: none;
+  width: 100px;
+}
+*/
+
+/*
+button {
+  width: 10%;
+}
+*/

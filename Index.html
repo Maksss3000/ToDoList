@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My ToDoList</title>
+    <link href="Style/ToDoStyle.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <main class="mainClass">
+      <div class="mainContainer">
+        <h1>My To Do List</h1>
+        <h2>Empty list.</h2>
+        <section class="addTask_Search">
+          <div class="textField_addBtn">
+            <input
+              id="Text"
+              class="main_input"
+              type="text"
+              placeholder="Enter new Task"
+            />
+            <button id="AddTaskBtn" class="main_addTaskBtn" type="button">
+              Add Task
+            </button>
+          </div>
+          <div class="search_dele">
+            <input type="text" placeholder="Search Task" id="search" />
+            <button class="deleteList" type="button">Delete List</button>
+          </div>
+        </section>
+
+        <section class="clickMe">
+          <div class="clickMe_color">
+            <button id="MyBtn" type="button" class="clickMe_btn">
+              Click Me
+            </button>
+            <input type="color" value="#add8e6" id="color" />
+          </div>
+        </section>
+
+        <!-- <button id="AddTaskBtn" type="button">Add Task</button> <br /> -->
+        <ul id="list"></ul>
+      </div>
+    </main>
+    <script src="Js/ToDoJs.js"></script>
+  </body>
+  <footer>
+    <p>&copy; Maksimilian Raykhman 2021</p>
+  </footer>
+</html>
