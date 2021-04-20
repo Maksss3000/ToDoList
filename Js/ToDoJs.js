@@ -193,10 +193,24 @@ list.addEventListener("click", function (e) {
   let textFieldAndButton;
   textFieldAndButton = document.getElementById(e.target.id);
 
+
   //Removing specific task from Task-List.
   if (e.target && e.target.matches("button")) {
       textFieldAndButton.remove();
   }
+
+  //Clicking on task to mark that specific 
+  // task is completed.
+  else if (e.target) {
+
+    if( e.target.style.textDecoration=="line-through"){
+      e.target.style.textDecoration="none"; 
+    }
+    else{
+      e.target.style.textDecoration="line-through";
+    }
+    
+}
 
   if(list.children.length==0){
     listIsEmpty.style.visibility="visible";
