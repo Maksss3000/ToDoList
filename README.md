@@ -1,7 +1,7 @@
 ### To Do List.
 ___
 
-**About  Game**
+**All About To Do List**
 
 *This is  To Do List ,
 here you can write your goals/tasks and add them to Task List.
